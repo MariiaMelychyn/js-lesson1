@@ -1,19 +1,62 @@
-// РІЗНИЦЯ МІЖ VAR , LET , CONST
-// var a = 20;
-// var a = 25;
-// console.log(a);
-
-// let a = 5;
-// let a = 10;
-
-// const a = 10;
-// const a = 40;
+// 1) КАХУТ
+// 2) ПЕРЕВІРКА ЗАСВОЄНОГО МАТЕРІАЛУ;
+// 3) ЗАДАЧІ;
 
 
-// Определение типа значения, оператор typeof
-//1) Валидация форм
-// Де можна використовувати typeof, наприклад юзер заповняє форму, і він у полі має ввести пароль, який має містити цифри, і таким чином за допомогою typeof провіряєте чи юзер ввів число
-//Також можна провірити, який тип даних нам прилітає з бекенда
+
+//  Базовые оператори +,-,*,/
+// Проверка сложения
+
+// let a = "DEN ";
+// let b = "UK";
+// console.log(a + b); 
+
+
+// let a = 3;
+// let b = ' join'; 
+// console.log(a + b);
+
+
+// let a = true;
+// let b = " join"; 
+// console.log(a + b);
+
+// let a = true; 
+// let b = 12;
+// console.log(a + b); 
+
+// let a = true;
+// let b = true;
+// console.log(a + b); 
+
+// let a = true;
+// let b = "false";
+// console.log(a + b);
+
+// let a = 12;
+// let b = null;
+// console.log(a + b); 
+
+// let a = undefined;
+// let b = 10;
+// console.log(a + b); 
+
+// let a = undefined;
+// let b = false;
+// console.log(a + b); 
+
+// let a = 6;
+// let b = false;
+// let c = "12";
+// let d = 1;
+// let result = a + d + c + b; 
+// console.log(result);
+// console.log(typeof (result));
+
+
+
+
+//Визначення типу значення, оператор typeof
 
 // const productName = 'Mango';
 // const pricePerItem = 150;
@@ -24,128 +67,164 @@
 // console.log(typeof productName);
 // console.log(typeof pricePerItem);
 // console.log(typeof isOnSale);
-// console.log(typeof error); //є тип даних null, але помилку яку допустив хто створював js і прописав , що це буде object
+// console.log(typeof error); 
 // console.log(typeof quantity);
 
+//2 ЗАНЯТТЯ
 
+// console.log(0.1 + 0.2 === 0.3); //FALSE
+// console.log(0.1 + 0.2); //0.300000000004
+// let result = 0.1 + 0.2;
+// console.log(result) //0.300000000004
+// console.log(Math.floor(result)) //0
+// console.log(Math.ceil(result)) //1
+// console.log(Math.round(result)) //0
+// console.log(result.toFixed(2)) //0.30
 
-//2) Шаблонные строки
-// ВОНИ ПОТРІБНІ ДЛЯ ТОГО, ЯК ПРИКЛАД ВИВЕСТИ ЮЗЕРУ ШАБЛОННУ СТОКУ, ЩО ВІН ВВІВ НЕ ПРАВИЛЬНІ ДАНІ, АБО ЯК ВАРІАНТ УСІМ ПРИХОДЯТЬ ПОВІДОМЛЕННЯ НА ПОЧТУ , ПРИВІТ МАРІЯ, МИ ГОТОВІ ВАМ ЗАПРОПОНУВАТИ ....
-// // Написать фразу с помощью шаблонных строк Здравствуйте, меня зовут А, мне Б лет и мне нравится Ц, где А, Б, Ц - переменные вставленные в строку.
-
-
-// const name = 'Манго';
-// const age = 5;
-// const hobby = 'плавать';
-// const message = `Здравствуйте, меня зовут ${name} мне ${age} лет и мне нравиться ${hobby}`;
-
-// console.log(message);
-
-
-
-//3) Prompt и confirm
-
-//РЕКОМЕНДУЮ, КОЛИ ВАМ ПРИХОДИТЬ ЗАДАЧА , НАПИСАТИ СОБІ ПСЕВДОКОД, ЦЕ ТАК ПРОСТИМИ СЛОВАМИ, ВИ СОБІ РОЗПИСУЄТЕ ПОСТУПОВО , ЩО ВАМ ПОТРІБНО ЗРОБИТИ
-// ВСЯ СУТЬ ЗАДАЧІ, ЯК ВИ СТВОРЮЄТЕ АЛГОРИТМ НАПИСАННЯ КОДУ, А ПОТІМ НА ЯКІ ВИ МОВІ БУДЕТЕ РІШАТИ ЗАДАЧУ , ЦЕ ВЖЕ НЕ ГОЛОВНЕ
-
-// Спросить у пользователя имя, почту,  телефон и показать в консоле фразу "Пользоваель под именем ____ использует ____ почту и ____ телелефон"
-// 1) Спросить имя юзера (prompt)
-// 2) Спросить почту (prompt)
-// 3) Спросить телефон (prompt)
-// 4) Составить финальную фразу (template string)
-
-// const userName = prompt('Enter your name');
-// const email = prompt('Enter your email');
-// const phoneNumber = prompt('Enter phon number');
-
-// const message = `Пользоваель под именем ${userName} использует ${email} почту и ${phoneNumber} телелефон`;
-// console.log(message);
-
-
-// 4) Базовые операторы +,-,*,/
-//ДЛЯ ЗАСВОЄННЯ МАТЕРІАЛУ ДАВАЙТЕ ПЕРЕГЛЯНЕМО , НАСКІЛЬКИ БУВ ЗРОЗУМІЛИЙ ВАМ МАТЕРІАЛ
-// Проверка сложения
-
-// let a = "Join ";
-// let b = "us";
-// console.log(a + b); 
-// console.log(typeof a + b)
-
-// let a = 3;
-// let b = ' join'; //ЯКЩО ЯКИЙСЬ ЕЛЕМЕНТ Є РЯДКОВИЙ, ТОДІ ПОЛУЧАЄМО РЯДОК
-// console.log(a + b);
-
-// let a = true;
-// let b = " join"; // ТОМУ ЩО ТРУ ПЕРЕВОДИТЬ У РЯДОК
-// console.log(a + b);
-
-// let a = true; //ТОМУ ЩО ТУТ НЕМАЄ РЯДКА , А ТРУ ЗАВЖЛИ У НАС 1 , ТАКИМ ЧИНОМ НАМ ДОДАЛИ ЧИСЛА
-// let b = 12;
-// console.log(a + b); //13
-
-// let a = true;
-// let b = true;
-// console.log(a + b); //2
-
-// let a = true;
-// let b = "false";
-// console.log(a + b); // TRUEFALSE, ТОМУ ЩО Є РЯДОК, І ТАКИМ ЧИНОМ ПЕРЕВЕЛО У РЯДОК УСЕ
-
-// let a = 12;
-// let b = null;
-// console.log(a + b); //12, 12 ЧИСЛО, РЯДКІВ НЕМАЄ, NULL - ТИП ДАНИХ, І ПЕРЕВОДИТЬ ЙОГО В 0, ТОМУ 12
-
-// let a = undefined;
-// let b = 10;
-// console.log(a + b); //NaN -ТОМУ ЩО ПРИ ДОДАВАННІ UNDEFINED JS НЕ РОЗУМІЄ , ЩО ЦЕ ТАКЕ , UNDEFINED - нЕ ОПРИДІЛЕНИЙ, А NULL ЦЕ НОЛИК JS ВВАЖАЄ
-
-// let a = undefined;
-// let b = false;
-// console.log(a + b); // NaN
-
-// let a = 6;
-// let b = false;
-// let c = "12";
-// let d = 1;
-// let result = a + d + c + b; //712FALSE , ТОМУ ЩО У НАС ЙДЕ СПОЧАТКУ D  А ПОТІМ B
-// console.log(result);
-// console.log(typeof result);
+// let name = 'Bob';
+// let slicedName = name.slice(0, 2);
+// console.log('name', name); // BOB
+// console.log("slicedName", slicedName) //B
 
 
 
-//5) Обьект Math
-// // Определить площадь круга с радиусом 10см (ПR(2)). Math.pow(a, b) - возведение в степень
 
-// const rad = 10;
-// const PI = Math.PI;
-// const powRad = Math.pow(rad, 2);
-// const result = PI * powRad;
+
+
+//ЗАДАЧА ПО ФУНКЦІЇ
+// function sum() {
+//     let result = null;
+//     result = 2 + 3;
+//     return result;
+// }
+
+// const myNewResult = sum();
+
+// console.log("myNewResult", myNewResult)
+
+
+
+
+// || - превый true
+// && - первый false
+
+// Логические операторы
+// // Что выведет код?
+
+// console.log(true && 3); // 3
+
+// console.log(false && 3); //false
+
+// console.log(true && 4 && "hello"); //hello
+
+// console.log(true && 0 && "hello"); //0
+
+// console.log(true || 3); // true
+
+// console.log(true || 3 || 4); // true
+
+// console.log(true || false || 7); //true
+
+// console.log(null || 2 || undefined); //2
+
+// console.log(null || 2 && 3 || 4); //3 спочатку js проопрацьовує і
+
+
+
+
+// if...else и prompt
+// // Используя конструкцию if..else, напишите код, который будет спрашивать: «Какое количество месяцев в году». Если пользователь вводит 12 , 
+// то показать: «Верно!», в противном случае – отобразить: «Не знаете ? 12!»
+
+// 1) Попросить у юзера число
+// 2) Проверить равно ли оно 12
+// 3) На основе проверки запустить if или else
+
+// const userNumber = Number(prompt('Enter number'));
+
+// if (userNumber === 12) {
+//     console.log('Correct')
+// } else {
+//     console.log('Error')
+// }
+
+
+
+
+
+
+
+// // Написать программу которая получит от пользователя число и определит четное это число или не четное.
+
+// 1) Получить число
+// 2) Написать проверку на чет нечет
+// 3) Вивести результат
+
+
+// const day = prompt("Enter day");
+
+// if (day % 2 === 0) {
+//     console.log('Четное')
+// } else {
+//     console.log("Нечет")
+// }
+
+
+
+
+
+
+// Написать программу где мы спрашиваем у пользователя номер месяца  и показываем к какому времени года он принадлежит 
+// Если пользователь вводит 2 - показываем слово Зима
+
+// 1) Получить данные от юзера
+// 2) Проверка на время года
+// 3) Вывести результат
+
+// const monthNumber = Number(prompt('enter month number'));
+
+// if (monthNumber === 1) {
+//     console.log('Зима')
+// } else if (monthNumber === 2) {
+//     console.log('Зима')
+// } else if (monthNumber === 12) {
+//     console.log('Зима')
+// }
+
+// ВИКОРИСТОВУЄМО ЛОГІЧНИЙ ОПЕРАТОР
+// if (monthNumber === 12 || monthNumber === 1 || monthNumber === 2) {
+//     console.log("Зима")
+// } else if (monthNumber >= 3 && monthNumber <= 5) {
+//     console.log('Весна');
+// } else if (monthNumber >= 6 && monthNumber <= 8) {
+//     console.log('Лето')
+// } else if (monthNumber >= 9 && monthNumber <= 11) {
+//     console.log('Осень')
+// } else {
+//     console.log('данные не валидны')
+// }
+
+
+
+
+
+// Написать программу которая проверяет логин и пароль пользователя и выводит приветствие - если все отлично и ошибку если неверный логин
+
+// const login = 'user@gmail.com';
+// const password = '12345'
+
+// const userLogin = prompt('Enter login')
+// const userPassword = prompt('Enter password')
+
+// if (login === userLogin && password === userPassword) {
+//     console.log('Wellcome')
+// } else {
+//     console.log('Error')
+// }
+
+
+//ТЕРНАРНИЙ ОПЕРАТОР
+
+// const result = login === userLogin && password === userPassword ? "Wellcome" : 'Error'
+
 // console.log('result', result)
-
-
-
-// const rad = 10;
-// const area = Math.PI * Math.pow(rad, 2);
-// console.log(area);
-
-
-
-//6) Посчитать суму товаров в козине магазина
-// Нужно ввести цену 3-х товаров и посчитать их суму
-
-// const phonePrice = Number(prompt('Enter phone price')); // 10
-// const tvPrice = +prompt('Enter tv price'); // 12
-// const playStationPrice = Number(prompt('Enter ps price')) // 8
-  
-
-// РЕЗУЛЬТАТО ДОДАВАННЯ ЗНАЧЕННЯ З PROMPT ЗАВЖДИ БУДЕ РЯДОК , І ПОЛУЧЕТЬСЯ 10128, ДЛЯ ТОГО НАМ ПОТРІБНО PROMT ПЕРЕВЕРНУТИ У МЕТОД NUMBER, ДЛЯ ТОГО 
-// + ЦЕ УНАРНИЙ ПЛЮС
-// const result = phonePrice + tvPrice + playStationPrice;
-
-// console.log(result); // 30
-
-
-
-
-
-// 2 ЗАНЯТТЯ 1 МОДУЛЯ
