@@ -228,3 +228,104 @@
 // const result = login === userLogin && password === userPassword ? "Wellcome" : 'Error'
 
 // console.log('result', result)
+
+
+
+
+
+
+// написать програму которая спращивает у пользователя период подписки на сервис и показывает цену подписки
+// сначала if else потом switch 
+// Если ввел День - цена 1.99
+// Если Неделя - цена 5.99
+// Если месяц - цена 10.99
+// Если год - цена 100.99
+
+// const period = prompt('Enter period')
+
+// if (period === 'День') {
+//     console.log('1.99')
+// } else if (period === 'Неделя') {
+//     console.log('5.99')
+// } else if (period === 'Месяц') {
+//     console.log('10.99')
+// } else if (period === 'Год') {
+//     console.log('100.99')
+// }
+
+// switch (period) { //switch по замовчуванні провіряє на строге порівняння
+//     case "День": //це сценарій , або варіант який потрібно провірити
+//         console.log('1.99')
+//         break; //break зупиняє логіку switch -а дальше
+//         case 'Неделя':
+//         console.log('5.99')
+//         break;
+//         case 'Месяц':
+//         console.log('10.99')
+//         break
+//         case 'Год':
+//         console.log('100.99')
+//         break
+//     default:
+//         console.log('Error')
+//         break;
+// }
+
+
+
+
+
+
+
+
+
+// for 
+
+// Напишите цикл for который выводит в консоль браузера числа по возрастанию от min до max.
+
+const max = 100;
+const min = 20;
+
+// for (let i = min; i <= max; i += 1) {
+//     console.log(i)
+// }
+
+// вывести только числа кратные 10
+
+// for (let i = min; i <= max; i += 10) {
+//     console.log(i)
+// } // 10 итераций
+
+// for (let i = min; i <= max; i += 1) {
+//     if (i % 10 === 0) {
+//         console.log(i) // 20  30
+//     }
+//     continue
+// }
+
+// for (let i = min; i <= max; i += 1) {
+//     if (i % 10 !== 0) {
+//         continue
+
+//     }
+//     console.log(i) // 20  30
+// }
+
+// for (let i = min; i <= max; i += 10) {
+//     if (i === 50) {
+//         break
+//     }
+//     console.log(i)
+// } // 10 итераций
+
+// for (let i = min; i < 50; i += 10) {
+    
+//     console.log(i)
+// } // 10 итераций
+
+
+
+
+// for(let i = min; i <= max; i += 1) {
+//   console.log(i)
+// }
