@@ -283,8 +283,8 @@
 
 // Напишите цикл for который выводит в консоль браузера числа по возрастанию от min до max.
 
-const max = 100;
-const min = 20;
+// const max = 100;
+// const min = 20;
 
 // for (let i = min; i <= max; i += 1) {
 //     console.log(i)
@@ -329,3 +329,10 @@ const min = 20;
 // for(let i = min; i <= max; i += 1) {
 //   console.log(i)
 // }
+
+
+
+
+
+
+
