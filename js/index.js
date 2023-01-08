@@ -54,6 +54,34 @@
 // console.log(typeof (result));
 
 
+// console.log(0.1 + 0.2 === 0.3);
+
+
+// let name = 'Bob';
+// let slicedName = name.slice(0, 2);
+
+
+// Логічні оператори
+//  Що виведе код ?
+
+// console.log(true && 3); 
+
+// console.log(false && 3); 
+
+// console.log(true && 4 && "hello"); 
+
+// console.log(true && 0 && "hello"); 
+
+// console.log(true || 3); 
+
+// console.log(true || 3 || 4); 
+
+// console.log(true || false || 7); 
+
+// console.log(null || 2 || undefined); 
+
+// console.log(null || 2 && 3 || 4); 
+
 
 
 //Визначення типу значення, оператор typeof
@@ -69,65 +97,6 @@
 // console.log(typeof isOnSale);
 // console.log(typeof error); 
 // console.log(typeof quantity);
-
-//2 ЗАНЯТТЯ
-
-// console.log(0.1 + 0.2 === 0.3); //FALSE
-// console.log(0.1 + 0.2); //0.300000000004
-// let result = 0.1 + 0.2;
-// console.log(result) //0.300000000004
-// console.log(Math.floor(result)) //0
-// console.log(Math.ceil(result)) //1
-// console.log(Math.round(result)) //0
-// console.log(result.toFixed(2)) //0.30
-
-// let name = 'Bob';
-// let slicedName = name.slice(0, 2);
-// console.log('name', name); // BOB
-// console.log("slicedName", slicedName) //B
-
-
-
-
-
-
-//ЗАДАЧА ПО ФУНКЦІЇ
-// function sum() {
-//     let result = null;
-//     result = 2 + 3;
-//     return result;
-// }
-
-// const myNewResult = sum();
-
-// console.log("myNewResult", myNewResult)
-
-
-
-
-// || - превый true
-// && - первый false
-
-// Логические операторы
-// // Что выведет код?
-
-// console.log(true && 3); // 3
-
-// console.log(false && 3); //false
-
-// console.log(true && 4 && "hello"); //hello
-
-// console.log(true && 0 && "hello"); //0
-
-// console.log(true || 3); // true
-
-// console.log(true || 3 || 4); // true
-
-// console.log(true || false || 7); //true
-
-// console.log(null || 2 || undefined); //2
-
-// console.log(null || 2 && 3 || 4); //3 спочатку js проопрацьовує і
 
 
 
