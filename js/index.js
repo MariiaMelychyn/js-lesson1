@@ -57,8 +57,11 @@
 // console.log(0.1 + 0.2 === 0.3);
 
 
+
 // let name = 'Bob';
 // let slicedName = name.slice(0, 2);
+
+
 
 
 // Логічні оператори
@@ -92,11 +95,15 @@
 // const error = null;
 // let quantity;
 
+
 // console.log(typeof productName);
 // console.log(typeof pricePerItem);
 // console.log(typeof isOnSale);
 // console.log(typeof error); 
 // console.log(typeof quantity);
+
+
+
 
 
 
