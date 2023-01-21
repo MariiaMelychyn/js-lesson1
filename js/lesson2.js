@@ -75,7 +75,7 @@
 // Например для первого элемента массива['Mango', 'Poly', 'Ajax'] с индексом 0 будет выведено
 // 1 - Mango, а для индекса 2 выведет 3 - Ajax.
 
-// const users = ["Mango", "Poly", "Ajax"]; // 3
+const users = ["Mango", "Poly", "Ajax"]; // 3
 
 // for (let i = 0; i < users.length; i++) {
 //   console.log("index", i); // 0 // 1 // 2
@@ -86,6 +86,14 @@
 //   console.log("index", users.indexOf(user));
 //   console.log(user); // Mango //Poly  // Ajax
 // }
+
+// const logItems = function (array){
+// for (let i = 0; i < users.length; i++) {
+//   console.log("index", i); // 0 // 1 // 2
+//   console.log("value", users[i]); // users[0] // users[1] // users[2]
+// }
+// }
+// logItems();
 
 
 
@@ -131,7 +139,7 @@
 //палиндромом - це число яке читає з права на ліво та з ліва на право одинаково, напрклад довод
 //
 
-// const str = "довод"; // тут має получитись тру 
+// const str = "ротатор"; // тут має получитись тру 
 // const newString = "Hello"; //тут фолс
 
 // 1) Сделать со строки масив
@@ -387,3 +395,115 @@
 // updateCourse("Express", "NestJS"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
 
 // console.log(courses);
+
+
+
+
+
+
+
+
+
+// МОДУЛЬ 3 1 ЗАНЯТТЯ
+
+
+
+// 1 ЗАДАЧА)  Напиши скрипт, который, для объекта user, последовательно:
+
+// добавляет поле mood со значением 'happy'
+// заменяет значение hobby на 'skydiving'
+// заменяет значение premium на false
+// выводит содержимое объекта user в формате ключ:значение используя Object.keys() и for...of
+
+// const user = {
+//   name: "Mango",
+//   age: 20,
+//   hobby: "html",
+//   premium: true,
+// };
+
+//1) PYSH НЕ ВИКОРИСТОВУЄМ, БО ЦЕ МЕТОД МАСИВУ 
+// user.mood = "happy";
+// user.hobby = "skydiving";
+// user.premium = false;
+
+// 2)ОТРИМУЄМО ВСІ КЛЮЧІ
+// const keys = Object.keys(user);
+// console.log(`keys`, keys);
+
+// 3) ЗА ДОПОМОГОЮ FOR OF ОТРИМУЄМО КЛЮЧ ЗНАЧЕННЯ
+// for (let key of keys) {//ТУТ МИ ПОЛУЧАЄМО МАСИВ КЛЮЧЕЙ
+//   // key = 'name'
+//   // key = 'age'
+//   console.log(`${key} : ${user[key]}`); //[KEY] ЦЕ ДИНАМІЧНЕ ЗНАЧЕННЯ , МИ НЕ ЗНАЄМО ЯКЕ ЗНАЧЕННЯ ЗАПИШЕТЬСЯ,ТОМУ МИ ЗАПИСУЄМО У КВАДРАТНІ ДУЖКИ
+// }
+
+// console.log(user);
+
+// 2 ЗАДАЧА) У нас есть объект, в котором хранятся зарплаты нашей команды.
+// Напишите код для суммирования всех зарплат и сохраните результат в переменной sum.
+// Должно получиться 390. Если объект salaries пуст, то результат должен быть 0.
+
+// const salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130,
+// };
+//ЦЕ МОЖНА ВИКОРИСТОВУВАТИ ДЕКІЛЬКОМА СПОСОБАСИ, FOR IN, А МОЖНА СТАНДАРТНИЙ FOR OF
+
+// const money = Object.values(salaries);//1) ОТРИМУЄМО ЗНАЧЕННЯ І ЗАПИСУЄМО У МАСИВ
+// console.log(`money`, money);
+// let total = 0; //3) СТВ ЗМІННУ ДО ЯКОЇ МИ БУДЕМО ДОДАВАТИ
+
+// for (let element of money) {2) ТЕПЕР НАМ ПОТРІБНО ДОДАТИ
+//   total += element;
+// }
+
+// console.log(`total`, total);
+
+
+//2-Й ВАРІАНТ, ЩОБ МОЖНА БУЛО ПЕРЕВИКОРИСТОВУВАТИ ЛОГІКУ, ТОМУ ПИШЕМО ФУНКЦІЮ
+
+// function calculateSalaries(salaries) {
+//   const money = Object.values(salaries);
+//   console.log(`money`, money);
+//   let total = 0;
+
+//   for (let element of money) {
+//     total += element;
+//   }
+//   return total;
+// }
+
+// console.log("result", calculateSalaries(salaries));
+
+
+// 3 ЗАДАЧА) Создайте объект calculator(калькулятор) с тремя методами:
+// read()- запрашивает два значения и сохраняет их как свойства объекта.
+// sum() - возвращает сумму сохранённых значений.
+// mult() - перемножает сохранённые значения и возвращает результат.
+
+// const calculator = {
+//   a: null,//ТУТ МИ ЗАПИСУЄМО, ЩОБ НАШІ ЗНАЧЕННЯ ЗАПИСУВАЛИСЬ У ОБЄКТ
+//   b: null,
+
+//   read() {
+//     this.a = prompt("Enter A value");
+//     this.b = prompt("Enter B value");
+//   },
+
+//   sum() {
+//     return Number(this.a) + Number(this.b);
+//   },
+
+//   mult() {
+//     return this.a * this.b;
+//   },
+// };
+
+// console.log("before read", calculator);
+// calculator.read();
+// console.log("after read", calculator);
+// console.log(`sum`, calculator.sum());
+// console.log(`mult`, calculator.mult());
+
