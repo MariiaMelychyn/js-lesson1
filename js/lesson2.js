@@ -79,21 +79,21 @@
 // console.log(sum())
 
 // 5)
-let a = 5;
-let b = 10;
+// let a = 5;
+// let b = 10;
 
-function sum() {
-  let a = sum2(); 
+// function sum() {
+//   let a = sum2(); 
 
-  function sum2() {
-    let a = 30;
-    return a + b;
-  }
+//   function sum2() {
+//     let a = 30;
+//     return a + b;
+//   }
 
-  return a + b;
-}
+//   return a + b;
+// }
 
-console.log(sum());
+// console.log(sum());
 
 
 
