@@ -96,13 +96,13 @@
 
 
 // КАХУТ
-// const checkString = (str) => {
-//     let exp;
-//     if (str || 0){
-//         exp = false
-//     } else {
-//         exp = true
-//     }
-//     console.log(exp)
-// }
-// checkString("html & css & js tasks")
+const checkString = (str) => {
+    let exp;
+    if (str && 0){
+        exp = false
+    } else {
+        exp = true
+    }
+    console.log(exp)
+}
+checkString("html & css & js tasks")
