@@ -1,3 +1,5 @@
+// МОДУЛЬ 2-3
+
 // ЩО КОНСОЛЬ ВИВЕДЕ НА ЕКРАН
 // const roles = ["user", "tester", "admin"];
 // console.log(roles[1]); 
@@ -7,6 +9,8 @@
 // console.log(roles[-1]);
 // const lastIndex = roles.length - 1;
 // console.log(roles[lastIndex]);
+
+// const roles = ["user", "tester", "admin"];
 
 // roles.pop();
 // console.log(roles);
@@ -20,8 +24,7 @@
 // roles.unshift("manager");
 // console.log(roles);
 
-// roles.splice(2, 3);
-// console.log(roles);
+
 
 
 //ДАВАЙТЕ ПЕРЕВІРЕМО ОБЛАСТЬ ВИДИМОСТІ Ф-ЦІЇ
@@ -76,33 +79,61 @@
 // console.log(sum())
 
 // 5)
-// let a = 5;
-// let b = 10;
+let a = 5;
+let b = 10;
 
-// function sum() {
-//   let a = sum2(); 
+function sum() {
+  let a = sum2(); 
 
-//   function sum2() {
-//     let a = 30;
-//     return a + b;
-//   }
+  function sum2() {
+    let a = 30;
+    return a + b;
+  }
 
-//   return a + b;
-// }
+  return a + b;
+}
 
-// console.log(sum());
+console.log(sum());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 // КАХУТ
-const checkString = (str) => {
-    let exp;
-    if (str && 0){
-        exp = false
-    } else {
-        exp = true
-    }
-    console.log(exp)
-}
-checkString("html & css & js tasks")
+// const checkString = (str) => {
+//     let exp;
+//     if (str && 0){
+//         console.log(str && 0)
+//         exp = false
+//     } else {
+//         exp = "true"
+//     }
+  
+//     console.log(exp)
+// }
+// checkString("html & css & js tasks")
+
+
+
+
+
