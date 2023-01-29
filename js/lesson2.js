@@ -10,7 +10,7 @@
 // const lastIndex = roles.length - 1;
 // console.log(roles[lastIndex]);
 
-// const roles = ["user", "tester", "admin"];
+const roles = ["user", "tester", "admin"];
 
 // roles.pop();
 // console.log(roles);
@@ -78,7 +78,9 @@
 // }
 // console.log(sum())
 
+
 // 5)
+
 // let a = 5;
 // let b = 10;
 
@@ -126,12 +128,13 @@
 //         console.log(str && 0)
 //         exp = false
 //     } else {
-//         exp = "true"
+//         exp = true
 //     }
   
 //     console.log(exp)
 // }
 // checkString("html & css & js tasks")
+
 
 
 
